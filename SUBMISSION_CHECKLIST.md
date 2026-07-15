@@ -6,7 +6,7 @@ A round-of-check against the assignment deliverables, so nothing is missed befor
 
 | Deliverable | Status | Notes |
 |---|---|---|
-| **Working demo / preview** | ✅ Local | Runs on `http://localhost:3000` via `npm run dev`. Demo is intentionally **local-only** (no hosted link required). Hosting to Vercel is an optional extra, not needed to review. |
+| **Working demo / preview** | ✅ Live + local | **Live:** https://kerala-ayurveda-pdp.onrender.com (Render; first load after idle cold-starts ~30–60s). Local: `npm run dev` → `http://localhost:3000`. |
 | **GitHub repository** | ◑ Ready to push | Committed locally to the **`demo/kerala-ashwagandha-pdp`** branch. Pushing to GitHub needs your account/remote — see "Pending (you)" below. |
 | **README** | ✅ | `README.md` covers setup, Shopify install, merchant config, architecture, API, time spent, tradeoffs, testing, performance, limitations, real-vs-mocked. Plus `shopify/README.md`, `DESIGN_SPEC.md`, `PRODUCTION_READINESS.md`. |
 | **2–4 min Loom walkthrough** | ⏳ Pending (you) | Script ready in `LOOM_SCRIPT.md` — local-only, ~3 min. **I can't record video; you record it from the running local app.** |
@@ -37,4 +37,5 @@ A round-of-check against the assignment deliverables, so nothing is missed befor
 4. *(Optional)* Deploy the prototype (Vercel) for a hosted link, and install the Shopify extension on a Partner dev store per `shopify/README.md`.
 
 ## To view the app right now
-It's running locally — open **http://localhost:3000**.
+- **Live:** https://kerala-ayurveda-pdp.onrender.com (allow ~30–60s if it's cold).
+- **Local:** `npm run dev` → **http://localhost:3000**.
