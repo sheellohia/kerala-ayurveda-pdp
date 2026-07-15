@@ -198,7 +198,7 @@ with regulatory/legal counsel and backed by on-file evidence before publishing. 
 
 ## Deliverables
 
-- **Demo/preview**: **local** — `npm run dev` → http://localhost:3000 (no hosting required; Vercel-deployable if you want a link).
+- **Demo/preview**: **local** — `npm run dev` → http://localhost:3000 (no hosting required). Hosted deploy: a `render.yaml` blueprint is included — in Render, New → Blueprint → connect this repo/branch.
 - **Repository**: this repo (committed to the `demo/kerala-ashwagandha-pdp` branch).
 - **README**: this file. **AI usage note**: [`AI_USAGE.md`](AI_USAGE.md).
 - **Shopify guide**: [`shopify/README.md`](shopify/README.md). **Build brief**: `DESIGN_SPEC.md`.

@@ -1,0 +1,23 @@
+# Render Blueprint — deploys the Next.js prototype as a Node web service.
+# In the Render dashboard: New → Blueprint → connect this repo/branch; Render
+# reads this file. Spec: https://render.com/docs/blueprint-spec
+#
+# The app runs fully without any secret (the recommendation engine is
+# deterministic). Set ANTHROPIC_API_KEY in the Render dashboard only if you want
+# the optional AI-refined copy layer — it is never committed to the repo.
+services:
+  - type: web
+    name: kerala-ayurveda-pdp
+    runtime: node
+    plan: free
+    branch: demo/kerala-ashwagandha-pdp
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    healthCheckPath: /
+    envVars:
+      # Optional — enables AI-refined recommendation copy. Leave unset to use the
+      # deterministic fallback. Set the value in the Render dashboard, not here.
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: NODE_VERSION
+        value: "22"
