@@ -1,0 +1,8 @@
+{
+  "fit_check": {
+    "heading": "Is Ashwagandha right for you?",
+    "button": "Find my fit",
+    "step": "Step {{ current }} of {{ total }}",
+    "skip": "Just show me the product"
+  }
+}

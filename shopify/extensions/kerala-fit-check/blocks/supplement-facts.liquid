@@ -1,0 +1,77 @@
+{%- comment -%}
+  Supplement Facts — Shopify app block driven by PRODUCT METAFIELDS.
+
+  This demonstrates product-specific merchant configurability: each product's
+  extract, dose, and standardization come from its own metafields (namespace
+  `custom`), so the merchant edits them per product in Admin — no theme code.
+  The block heading and the COA link are block-level settings.
+
+  Metafields read (see shopify/metafields/definitions.json):
+    custom.extract_name        (single line text)
+    custom.mg_per_serving      (integer)
+    custom.withanolide_percent (integer)
+    custom.plant_part          (single line text)
+    custom.vegan               (boolean)
+    custom.coa_url             (URL)
+{%- endcomment -%}
+
+{%- liquid
+  assign mf = product.metafields.custom
+  assign extract = mf.extract_name | default: 'KSM-66® Ashwagandha'
+  assign mg = mf.mg_per_serving | default: 600
+  assign withanolides = mf.withanolide_percent | default: 5
+  assign plant_part = mf.plant_part | default: 'Root only (contains no leaf)'
+-%}
+
+<div class="ka-facts" {{ block.shopify_attributes }}>
+  <h3 class="ka-facts__title">{{ block.settings.heading | escape }}</h3>
+  <dl class="ka-facts__grid">
+    <div class="ka-facts__row">
+      <dt>Extract</dt><dd>{{ extract | escape }}</dd>
+    </div>
+    <div class="ka-facts__row">
+      <dt>Standardized to</dt><dd>{{ withanolides }}% withanolides</dd>
+    </div>
+    <div class="ka-facts__row">
+      <dt>Per serving</dt><dd>{{ mg }} mg</dd>
+    </div>
+    <div class="ka-facts__row">
+      <dt>Plant part</dt><dd>{{ plant_part | escape }}</dd>
+    </div>
+    {%- if mf.vegan -%}
+      <div class="ka-facts__row"><dt>Suitable for</dt><dd>Vegetarians &amp; vegans</dd></div>
+    {%- endif -%}
+  </dl>
+
+  {%- if block.settings.show_coa_link and mf.coa_url != blank -%}
+    <a class="ka-facts__coa" href="{{ mf.coa_url }}" target="_blank" rel="noopener">
+      View third-party Certificate of Analysis →
+    </a>
+  {%- endif -%}
+
+  <p class="ka-facts__disclaimer">
+    Composition facts, not efficacy claims. These statements have not been evaluated by the Food and Drug Administration.
+  </p>
+</div>
+
+{% schema %}
+{
+  "name": "Supplement Facts",
+  "target": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What's inside"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_coa_link",
+      "label": "Show Certificate of Analysis link (uses custom.coa_url metafield)",
+      "default": true
+    }
+  ],
+  "presets": [{ "name": "Supplement Facts" }]
+}
+{% endschema %}

@@ -1,0 +1,12 @@
+# Shopify Theme App Extension config.
+# A theme app extension ships app blocks + app embed blocks that a merchant
+# drops onto the product template from the Theme Editor — no theme code edits.
+# This extension layers the "Is this right for me?" fit-check and a
+# metafield-driven Supplement Facts block onto Kerala Ayurveda's Impact theme.
+
+api_version = "2025-01"
+
+[[extensions]]
+name = "Kerala Ayurveda — Ashwagandha PDP"
+handle = "kerala-fit-check"
+type = "theme"

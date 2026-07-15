@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200" role="img" aria-label="Supplement facts panel: KSM-66 ashwagandha root extract, 600 mg per serving, standardized to 5 percent withanolides">
+  <defs>
+    <radialGradient id="bgf" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#f9f3e9"/>
+      <stop offset="100%" stop-color="#efe2cf"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#bgf)"/>
+  <g fill="#4f7a4a" opacity="0.12">
+    <path d="M120 260 C80 160 120 70 210 30 C230 130 200 220 120 260 Z"/>
+    <path d="M1080 1020 C1120 920 1080 830 990 790 C970 890 1000 980 1080 1020 Z"/>
+  </g>
+
+  <!-- panel card -->
+  <g>
+    <rect x="228" y="128" width="756" height="952" rx="20" fill="#4f342a" opacity="0.10" transform="translate(10 14)"/>
+    <rect x="228" y="128" width="756" height="952" rx="20" fill="#ffffff" stroke="#4f342a" stroke-width="5"/>
+
+    <text x="270" y="222" font-family="Georgia, 'Times New Roman', serif" font-size="64" fill="#2f2019">Supplement Facts</text>
+    <path d="M270 250h672" stroke="#2f2019" stroke-width="4"/>
+    <text x="270" y="300" font-family="Figtree, Arial, sans-serif" font-size="27" fill="#2f2019">Serving Size: 1–2 capsules daily</text>
+    <text x="270" y="340" font-family="Figtree, Arial, sans-serif" font-size="27" fill="#2f2019">Servings Per Container: 30</text>
+    <path d="M270 372h672" stroke="#2f2019" stroke-width="16"/>
+    <text x="942" y="416" text-anchor="end" font-family="Figtree, Arial, sans-serif" font-size="22" letter-spacing="1" font-weight="bold" fill="#2f2019">AMOUNT PER SERVING</text>
+    <path d="M270 434h672" stroke="#2f2019" stroke-width="3"/>
+
+    <text x="270" y="486" font-family="Figtree, Arial, sans-serif" font-size="30" font-weight="bold" fill="#2f2019">KSM-66® Ashwagandha</text>
+    <text x="942" y="486" text-anchor="end" font-family="Figtree, Arial, sans-serif" font-size="30" font-weight="bold" fill="#2f2019">600 mg†</text>
+    <text x="270" y="524" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="25" fill="#5f4a3d">(Withania somnifera) root extract</text>
+    <text x="270" y="560" font-family="Figtree, Arial, sans-serif" font-size="25" fill="#5f4a3d">Root only — contains no leaf</text>
+    <path d="M270 588h672" stroke="#2f2019" stroke-width="2"/>
+
+    <text x="270" y="636" font-family="Figtree, Arial, sans-serif" font-size="27" fill="#2f2019">Standardized to withanolides ≥ 5%</text>
+    <text x="942" y="636" text-anchor="end" font-family="Figtree, Arial, sans-serif" font-size="27" font-weight="bold" fill="#2f2019">30 mg†</text>
+    <path d="M270 668h672" stroke="#2f2019" stroke-width="10"/>
+
+    <text x="270" y="712" font-family="Figtree, Arial, sans-serif" font-size="23" fill="#5f4a3d">† Daily Value not established.</text>
+    <path d="M270 736h672" stroke="#2f2019" stroke-width="2"/>
+
+    <text x="270" y="784" font-family="Figtree, Arial, sans-serif" font-size="25" fill="#2f2019"><tspan font-weight="bold">Other ingredients:</tspan> organic rice flour,</text>
+    <text x="270" y="820" font-family="Figtree, Arial, sans-serif" font-size="25" fill="#2f2019">vegetarian capsule (HPMC).</text>
+    <text x="270" y="868" font-family="Figtree, Arial, sans-serif" font-size="25" fill="#2f2019">Contains no gluten, dairy, soy, or nuts.</text>
+
+    <!-- verification chips -->
+    <g transform="translate(270 928)">
+      <rect x="0" y="0" width="212" height="56" rx="28" fill="#f3f6f2" stroke="#c5d7c2" stroke-width="2"/>
+      <circle cx="30" cy="28" r="12" fill="#4f7a4a"/>
+      <path d="M24 28l5 5 8-9" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="54" y="36" font-family="Figtree, Arial, sans-serif" font-size="22" fill="#314e2f">Vegan</text>
+
+      <rect x="230" y="0" width="290" height="56" rx="28" fill="#f3f6f2" stroke="#c5d7c2" stroke-width="2"/>
+      <circle cx="260" cy="28" r="12" fill="#4f7a4a"/>
+      <path d="M254 28l5 5 8-9" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="284" y="36" font-family="Figtree, Arial, sans-serif" font-size="22" fill="#314e2f">Third-party tested</text>
+    </g>
+
+    <text x="606" y="1044" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="20" letter-spacing="3" fill="#a67352">KNOWN DOSE — NOT A PROPRIETARY BLEND</text>
+  </g>
+</svg>

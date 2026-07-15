@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200" role="img" aria-label="Kerala Ayurveda Ashwagandha three-bottle full-cycle pack">
+  <defs>
+    <radialGradient id="bg3" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#f9f3e9"/>
+      <stop offset="100%" stop-color="#efe2cf"/>
+    </radialGradient>
+    <linearGradient id="glass3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6f3d16"/>
+      <stop offset="28%" stop-color="#a05c24"/>
+      <stop offset="55%" stop-color="#b96f2e"/>
+      <stop offset="80%" stop-color="#8a4c1d"/>
+      <stop offset="100%" stop-color="#5d3212"/>
+    </linearGradient>
+    <linearGradient id="cap3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2e2016"/>
+      <stop offset="50%" stop-color="#4a3423"/>
+      <stop offset="100%" stop-color="#2e2016"/>
+    </linearGradient>
+    <g id="bottle3">
+      <ellipse cx="190" cy="668" rx="215" ry="26" fill="#4f342a" opacity="0.12"/>
+      <rect x="110" y="0" width="160" height="86" rx="16" fill="url(#cap3)"/>
+      <path d="M118 18h144M118 36h144M118 54h144" stroke="#1f150d" stroke-width="3" opacity="0.5"/>
+      <rect x="128" y="82" width="124" height="46" fill="#6f3d16"/>
+      <path d="M30 200 C30 138 108 118 190 118 C272 118 350 138 350 200 L350 596 C350 636 318 660 278 660 L102 660 C62 660 30 636 30 596 Z" fill="url(#glass3)"/>
+      <rect x="56" y="170" width="30" height="430" rx="15" fill="#ffffff" opacity="0.16"/>
+      <rect x="300" y="190" width="14" height="380" rx="7" fill="#3a2008" opacity="0.35"/>
+      <g>
+        <rect x="60" y="252" width="260" height="304" rx="12" fill="#fbf7f0" stroke="#e4d3c1" stroke-width="2"/>
+        <rect x="60" y="252" width="260" height="10" rx="5" fill="#314e2f"/>
+        <text x="190" y="300" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="17" letter-spacing="4.5" fill="#8f5d41">KERALA AYURVEDA</text>
+        <path d="M130 318h120" stroke="#dd9333" stroke-width="2.5"/>
+        <text x="190" y="368" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="37" fill="#314e2f">Ashwagandha</text>
+        <text x="190" y="400" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="18" fill="#4f342a">KSM-66® Root Extract</text>
+        <text x="190" y="428" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="16" fill="#754a37">600 mg · 5% withanolides</text>
+        <g transform="translate(190 462)">
+          <path d="M0 22 C-20 8 -20 -14 0 -24 C20 -14 20 8 0 22 Z" fill="#4f7a4a"/>
+          <path d="M0 20 L0 -20" stroke="#f3f6f2" stroke-width="2"/>
+        </g>
+        <text x="190" y="520" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="14" letter-spacing="2.5" fill="#a67352">60 VEGETARIAN CAPSULES</text>
+        <path d="M78 540h224" stroke="#e4d3c1" stroke-width="2"/>
+      </g>
+    </g>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#bg3)"/>
+  <circle cx="600" cy="580" r="455" fill="#f2e9df"/>
+  <circle cx="600" cy="580" r="455" fill="none" stroke="#e4d3c1" stroke-width="2"/>
+
+  <g fill="#4f7a4a" opacity="0.14">
+    <path d="M140 400 C100 300 140 210 230 170 C250 270 220 360 140 400 Z"/>
+    <path d="M1070 780 C1110 680 1070 590 980 550 C960 650 990 740 1070 780 Z"/>
+  </g>
+  <g fill="#dd9333" opacity="0.3">
+    <circle cx="215" cy="800" r="9"/>
+    <circle cx="242" cy="782" r="6"/>
+    <circle cx="975" cy="320" r="9"/>
+  </g>
+
+  <!-- back-left and back-right bottles -->
+  <use href="#bottle3" transform="translate(155 315) scale(0.86)"/>
+  <use href="#bottle3" transform="translate(720 315) scale(0.86)"/>
+  <!-- front-center bottle -->
+  <use href="#bottle3" transform="translate(415 275)"/>
+
+  <!-- pack tag -->
+  <g transform="translate(600 1090)">
+    <rect x="-230" y="-34" width="460" height="62" rx="31" fill="#dd9333"/>
+    <text x="0" y="7" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="26" letter-spacing="3" fill="#ffffff">FULL 90-DAY CYCLE</text>
+  </g>
+</svg>

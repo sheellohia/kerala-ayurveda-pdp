@@ -1,0 +1,62 @@
+{
+  "$comment": "Product metafield definitions the app blocks read. Create these in Shopify Admin > Settings > Custom data > Products (or via the Admin API / `shopify app` metafield tooling). Namespace is `custom`. These make each product's fit-check and facts editable by the merchant with NO code.",
+  "ownerType": "PRODUCT",
+  "definitions": [
+    {
+      "namespace": "custom",
+      "key": "fit_check_goals",
+      "name": "Fit-check goals",
+      "type": "json",
+      "description": "Optional per-product override of the fit-check goal options: [{\"value\":\"stress\",\"label\":\"Stress & feeling calmer\"}, ...]. Leave empty to use the default set."
+    },
+    {
+      "namespace": "custom",
+      "key": "safety_note",
+      "name": "Safety note",
+      "type": "multi_line_text_field",
+      "description": "Product-specific safety / contraindication line shown near the buy box and in the fit-check."
+    },
+    {
+      "namespace": "custom",
+      "key": "extract_name",
+      "name": "Extract name",
+      "type": "single_line_text_field",
+      "description": "e.g. 'KSM-66® Ashwagandha' — shown in the Supplement Facts block."
+    },
+    {
+      "namespace": "custom",
+      "key": "mg_per_serving",
+      "name": "mg per serving",
+      "type": "number_integer",
+      "description": "Milligrams of standardized extract per serving."
+    },
+    {
+      "namespace": "custom",
+      "key": "withanolide_percent",
+      "name": "Withanolide %",
+      "type": "number_integer",
+      "description": "Standardization percentage, e.g. 5."
+    },
+    {
+      "namespace": "custom",
+      "key": "plant_part",
+      "name": "Plant part",
+      "type": "single_line_text_field",
+      "description": "e.g. 'Root only (contains no leaf)'."
+    },
+    {
+      "namespace": "custom",
+      "key": "vegan",
+      "name": "Vegan",
+      "type": "boolean",
+      "description": "Whether the product is vegan/vegetarian-suitable."
+    },
+    {
+      "namespace": "custom",
+      "key": "coa_url",
+      "name": "Certificate of Analysis URL",
+      "type": "url",
+      "description": "Link to the third-party heavy-metal COA shown in the Supplement Facts block."
+    }
+  ]
+}

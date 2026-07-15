@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200" role="img" aria-label="Kerala Ayurveda Ashwagandha root powder pouch with scoop">
+  <defs>
+    <radialGradient id="bgp" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#f9f3e9"/>
+      <stop offset="100%" stop-color="#efe2cf"/>
+    </radialGradient>
+    <linearGradient id="kraft" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9c7350"/>
+      <stop offset="22%" stop-color="#c49a72"/>
+      <stop offset="55%" stop-color="#d0b298"/>
+      <stop offset="82%" stop-color="#b98d6d"/>
+      <stop offset="100%" stop-color="#8f5d41"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#bgp)"/>
+  <circle cx="600" cy="580" r="440" fill="#f2e9df"/>
+  <circle cx="600" cy="580" r="440" fill="none" stroke="#e4d3c1" stroke-width="2"/>
+
+  <g fill="#4f7a4a" opacity="0.14">
+    <path d="M170 380 C130 280 170 190 260 150 C280 250 250 340 170 380 Z"/>
+    <path d="M1040 800 C1080 700 1040 610 950 570 C930 670 960 760 1040 800 Z"/>
+  </g>
+
+  <!-- shadow -->
+  <ellipse cx="590" cy="1005" rx="330" ry="30" fill="#4f342a" opacity="0.12"/>
+
+  <!-- stand-up pouch -->
+  <g>
+    <path d="M330 300 L850 300 L816 940 C816 976 700 1000 590 1000 C480 1000 364 976 364 940 Z" fill="url(#kraft)"/>
+    <!-- top seal fold -->
+    <rect x="322" y="252" width="536" height="64" rx="10" fill="#8f5d41"/>
+    <path d="M336 268h508M336 284h508M336 300h508" stroke="#754a37" stroke-width="3" opacity="0.6"/>
+    <!-- notch -->
+    <circle cx="852" cy="284" r="7" fill="#f2e9df"/>
+    <!-- side sheen -->
+    <path d="M368 320 C360 520 358 740 372 930" stroke="#ffffff" stroke-width="22" opacity="0.16" stroke-linecap="round" fill="none"/>
+    <!-- label -->
+    <g>
+      <rect x="416" y="400" width="350" height="410" rx="14" fill="#fbf7f0" stroke="#e4d3c1" stroke-width="2"/>
+      <rect x="416" y="400" width="350" height="12" rx="6" fill="#314e2f"/>
+      <text x="591" y="462" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="21" letter-spacing="5" fill="#8f5d41">KERALA AYURVEDA</text>
+      <path d="M511 484h160" stroke="#dd9333" stroke-width="3"/>
+      <text x="591" y="548" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="54" fill="#314e2f">Ashwagandha</text>
+      <text x="591" y="592" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="24" fill="#4f342a">Root Powder</text>
+      <text x="591" y="628" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="20" fill="#754a37">Withania somnifera · root only</text>
+      <g transform="translate(591 682)">
+        <path d="M0 26 C-24 10 -24 -18 0 -30 C24 -18 24 10 0 26 Z" fill="#4f7a4a"/>
+        <path d="M0 24 L0 -24" stroke="#f3f6f2" stroke-width="2.5"/>
+      </g>
+      <text x="591" y="762" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="15" letter-spacing="1.5" fill="#a67352">TRADITIONAL · EARTHY · 30 SERVINGS</text>
+    </g>
+  </g>
+
+  <!-- powder mound + scoop -->
+  <g>
+    <path d="M170 1010 C200 940 330 928 380 972 C420 940 470 962 480 1002 C500 1010 500 1022 480 1028 L190 1028 C168 1024 162 1016 170 1010 Z" fill="#e6d3ae"/>
+    <g fill="#c9a96f">
+      <circle cx="240" cy="990" r="5"/>
+      <circle cx="300" cy="972" r="4"/>
+      <circle cx="360" cy="988" r="5"/>
+      <circle cx="420" cy="1000" r="4"/>
+      <circle cx="272" cy="1010" r="4"/>
+    </g>
+    <!-- wooden scoop -->
+    <g transform="translate(880 950) rotate(18)">
+      <ellipse cx="0" cy="0" rx="86" ry="52" fill="#a67352"/>
+      <ellipse cx="0" cy="-6" rx="70" ry="38" fill="#8f5d41"/>
+      <ellipse cx="0" cy="-8" rx="58" ry="30" fill="#e6d3ae"/>
+      <rect x="70" y="-12" width="120" height="26" rx="13" fill="#a67352"/>
+    </g>
+  </g>
+</svg>

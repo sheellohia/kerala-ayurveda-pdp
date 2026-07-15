@@ -1,0 +1,144 @@
+{%- comment -%}
+  "Is this right for me?" fit-check — Shopify app block.
+
+  Merchant adds this to the product template via the Theme Editor. It renders a
+  calm launcher; the flow, states, and micro-interactions live in
+  assets/fit-check.js and assets/fit-check.css. Answers POST to the recommend
+  API (via an App Proxy path by default) — the SAME contract as the Next.js
+  prototype's /api/recommend.
+
+  Merchant-editable (block settings below): heading, subheading, button label,
+  accent color, API endpoint, subscription-default toggle, match-meter toggle,
+  and the compliance disclaimer.
+
+  Product-specific (metafields): the goal set, safety note, and extract facts
+  come from the product's metafields when present, so each product tailors the
+  flow without code. See shopify/metafields/definitions.json.
+{%- endcomment -%}
+
+{%- liquid
+  assign accent = block.settings.accent_color | default: '#dd9333'
+  assign endpoint = block.settings.api_endpoint | default: '/apps/kerala/recommend'
+  assign goals_mf = product.metafields.custom.fit_check_goals
+  assign safety_note = product.metafields.custom.safety_note | default: block.settings.default_safety_note
+-%}
+
+<link rel="stylesheet" href="{{ 'fit-check.css' | asset_url }}" media="all">
+
+<div
+  class="ka-fitcheck"
+  id="ka-fitcheck-{{ block.id }}"
+  data-endpoint="{{ endpoint }}"
+  data-accent="{{ accent }}"
+  data-subscription-default="{{ block.settings.enable_subscription_default }}"
+  data-show-meter="{{ block.settings.show_match_meter }}"
+  style="--ka-accent: {{ accent }};"
+  {{ block.shopify_attributes }}
+>
+  <button type="button" class="ka-fitcheck__launcher" data-ka-open aria-haspopup="dialog">
+    <span class="ka-fitcheck__launcher-icon" aria-hidden="true">✦</span>
+    <span class="ka-fitcheck__launcher-text">
+      <span class="ka-fitcheck__launcher-title">{{ block.settings.heading | escape }}</span>
+      <span class="ka-fitcheck__launcher-sub">{{ block.settings.subheading | escape }}</span>
+    </span>
+    <span class="ka-fitcheck__launcher-cta">{{ block.settings.button_label | escape }}</span>
+  </button>
+
+  {%- comment -%} Config + product data island read by fit-check.js {%- endcomment -%}
+  <script type="application/json" data-ka-config>
+    {
+      "endpoint": {{ endpoint | json }},
+      "showMeter": {{ block.settings.show_match_meter | json }},
+      "subscriptionDefault": {{ block.settings.enable_subscription_default | json }},
+      "disclaimer": {{ block.settings.disclaimer | json }},
+      "safetyNote": {{ safety_note | json }},
+      "product": {
+        "title": {{ product.title | json }},
+        "url": {{ product.url | json }},
+        "variants": [
+          {%- for v in product.variants -%}
+            {
+              "id": {{ v.id | json }},
+              "title": {{ v.title | json }},
+              "available": {{ v.available | json }},
+              "price": {{ v.price | json }},
+              "option1": {{ v.option1 | json }},
+              "option2": {{ v.option2 | json }}
+            }{%- unless forloop.last -%},{%- endunless -%}
+          {%- endfor -%}
+        ]
+      },
+      {%- comment -%} Product-specific goal override via metafield, else the default set {%- endcomment -%}
+      "goalOverride": {%- if goals_mf != blank -%}{{ goals_mf | json }}{%- else -%}null{%- endif -%}
+    }
+  </script>
+
+  <div class="ka-fitcheck__mount" data-ka-mount hidden></div>
+</div>
+
+<script src="{{ 'fit-check.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "Fit-Check",
+  "target": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Is Ashwagandha right for you?"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "A no-pressure fit check for your goals — about a minute."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Find my fit"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#dd9333"
+    },
+    {
+      "type": "url",
+      "id": "api_endpoint",
+      "label": "Recommendation API endpoint",
+      "info": "App Proxy path (recommended) e.g. /apps/kerala/recommend, or a full HTTPS URL to your deployed API."
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_subscription_default",
+      "label": "Default the recommendation to Subscribe & Save",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_match_meter",
+      "label": "Show the match-strength meter",
+      "default": true
+    },
+    {
+      "type": "textarea",
+      "id": "default_safety_note",
+      "label": "Default safety note",
+      "info": "Overridden per product by the custom.safety_note metafield when set.",
+      "default": "Not for use during pregnancy or breastfeeding. Talk to your doctor first if you have a thyroid, autoimmune, or liver condition, or take any medication."
+    },
+    {
+      "type": "richtext",
+      "id": "disclaimer",
+      "label": "Compliance disclaimer",
+      "default": "<p>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>"
+    }
+  ],
+  "presets": [{ "name": "Fit-Check" }]
+}
+{% endschema %}

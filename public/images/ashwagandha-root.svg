@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200" role="img" aria-label="Whole ashwagandha roots with leaves and berries, illustrated">
+  <defs>
+    <radialGradient id="bgr" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#f9f3e9"/>
+      <stop offset="100%" stop-color="#efe2cf"/>
+    </radialGradient>
+    <linearGradient id="rootg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d0b298"/>
+      <stop offset="55%" stop-color="#b98d6d"/>
+      <stop offset="100%" stop-color="#a67352"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#bgr)"/>
+  <circle cx="600" cy="600" r="450" fill="#f2e9df"/>
+  <circle cx="600" cy="600" r="450" fill="none" stroke="#e4d3c1" stroke-width="2"/>
+
+  <!-- foliage crown -->
+  <g transform="translate(600 330)">
+    <path d="M0 40 C-10 -30 -6 -90 0 -130" stroke="#3c6138" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M0 -20 C-60 -40 -90 -90 -80 -150 C-20 -130 6 -80 0 -20 Z" fill="#4f7a4a"/>
+    <path d="M0 -50 C60 -70 90 -120 80 -180 C20 -160 -6 -110 0 -50 Z" fill="#3c6138"/>
+    <path d="M-6 10 C-80 10 -120 -30 -122 -80 C-60 -76 -16 -40 -6 10 Z" fill="#6f976a"/>
+    <path d="M6 0 C80 0 120 -40 122 -90 C60 -86 16 -50 6 0 Z" fill="#4f7a4a"/>
+    <!-- winter-cherry berries -->
+    <g>
+      <circle cx="-38" cy="-8" r="16" fill="#dd9333"/>
+      <circle cx="-38" cy="-8" r="16" fill="none" stroke="#c9781f" stroke-width="3"/>
+      <circle cx="34" cy="-24" r="14" fill="#e6ad55"/>
+      <circle cx="34" cy="-24" r="14" fill="none" stroke="#c9781f" stroke-width="3"/>
+      <circle cx="2" cy="18" r="12" fill="#c9781f"/>
+    </g>
+  </g>
+
+  <!-- main tap root -->
+  <g>
+    <path d="M600 380 C640 470 636 560 616 660 C600 740 606 830 588 910 C580 948 566 980 548 1004 C540 1014 528 1010 530 996 C540 940 548 880 542 820 C534 740 550 660 562 580 C572 500 576 440 600 380 Z" fill="url(#rootg)"/>
+    <!-- fork -->
+    <path d="M614 640 C660 700 686 770 700 850 C706 886 718 916 736 940 C744 952 734 962 724 954 C696 928 676 894 668 850 C654 780 632 716 606 668 Z" fill="url(#rootg)"/>
+    <path d="M566 600 C520 660 500 730 494 800 C490 840 478 872 460 896 C452 906 440 900 444 888 C458 848 466 812 468 772 C474 700 508 640 548 592 Z" fill="url(#rootg)"/>
+    <!-- rootlets -->
+    <g stroke="#a67352" stroke-width="6" stroke-linecap="round" fill="none">
+      <path d="M560 700 C540 710 528 724 520 742"/>
+      <path d="M620 760 C640 772 650 788 654 806"/>
+      <path d="M580 860 C566 872 558 886 554 902"/>
+      <path d="M690 880 C700 894 704 908 704 922"/>
+    </g>
+    <!-- texture rings -->
+    <g stroke="#8f5d41" stroke-width="4" opacity="0.45" fill="none">
+      <path d="M580 470 C600 476 616 476 628 470"/>
+      <path d="M572 540 C594 548 612 548 626 540"/>
+      <path d="M566 620 C588 628 606 628 620 620"/>
+      <path d="M556 720 C574 726 590 726 602 720"/>
+      <path d="M552 800 C568 806 582 806 594 800"/>
+    </g>
+  </g>
+
+  <!-- companion smaller root, laid down -->
+  <g transform="translate(300 940) rotate(-14)">
+    <path d="M0 0 C90 -22 190 -20 280 6 C300 12 300 26 280 30 C190 50 90 48 0 24 C-14 20 -14 4 0 0 Z" fill="url(#rootg)"/>
+    <g stroke="#8f5d41" stroke-width="4" opacity="0.45" fill="none">
+      <path d="M60 2 C64 12 64 20 60 28"/>
+      <path d="M130 -2 C136 10 136 24 130 34"/>
+      <path d="M200 0 C206 10 206 22 200 32"/>
+    </g>
+  </g>
+
+  <!-- caption chip -->
+  <g transform="translate(600 1108)">
+    <rect x="-250" y="-32" width="500" height="58" rx="29" fill="#314e2f"/>
+    <text x="0" y="7" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="24" letter-spacing="3" fill="#f3f6f2">ROOT ONLY — CONTAINS NO LEAF</text>
+  </g>
+</svg>

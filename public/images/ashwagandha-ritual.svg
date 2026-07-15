@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="A calm morning ritual: golden milk, two capsules, and an ashwagandha bottle in warm light">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf6ec"/>
+      <stop offset="100%" stop-color="#f2e4cd"/>
+    </linearGradient>
+    <linearGradient id="glassr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6f3d16"/>
+      <stop offset="35%" stop-color="#a05c24"/>
+      <stop offset="65%" stop-color="#b96f2e"/>
+      <stop offset="100%" stop-color="#5d3212"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#sky)"/>
+
+  <!-- morning sun -->
+  <circle cx="600" cy="420" r="300" fill="#f8e6c8" opacity="0.85"/>
+  <circle cx="600" cy="420" r="230" fill="#f0cd90" opacity="0.45"/>
+  <g stroke="#dd9333" stroke-width="5" opacity="0.35" stroke-linecap="round">
+    <path d="M600 60v56"/>
+    <path d="M330 140l38 40"/>
+    <path d="M870 140l-38 40"/>
+    <path d="M180 330l52 22"/>
+    <path d="M1020 330l-52 22"/>
+  </g>
+
+  <!-- window light band -->
+  <path d="M60 900 L340 160 L470 160 L250 900 Z" fill="#ffffff" opacity="0.25"/>
+  <path d="M480 900 L700 160 L760 160 L580 900 Z" fill="#ffffff" opacity="0.18"/>
+
+  <!-- table -->
+  <rect x="0" y="620" width="1200" height="280" fill="#d9bd9f"/>
+  <rect x="0" y="620" width="1200" height="18" fill="#c4a17c"/>
+  <g stroke="#c4a17c" stroke-width="3" opacity="0.5">
+    <path d="M0 700h1200"/>
+    <path d="M0 780h1200"/>
+  </g>
+
+  <!-- golden milk cup -->
+  <g transform="translate(430 520)">
+    <ellipse cx="88" cy="204" rx="150" ry="18" fill="#4f342a" opacity="0.14"/>
+    <path d="M-32 0 L208 0 L188 160 C186 186 148 204 88 204 C28 204 -10 186 -12 160 Z" fill="#fbf7f0"/>
+    <path d="M-32 0 L208 0 L204 34 L-28 34 Z" fill="#f2e9df"/>
+    <ellipse cx="88" cy="8" rx="120" ry="26" fill="#e6ad55"/>
+    <ellipse cx="88" cy="4" rx="120" ry="24" fill="#f0cd90"/>
+    <ellipse cx="60" cy="0" rx="34" ry="9" fill="#f8e6c8"/>
+    <!-- handle -->
+    <path d="M206 40 C266 46 266 120 200 132" stroke="#fbf7f0" stroke-width="24" fill="none" stroke-linecap="round"/>
+    <!-- steam -->
+    <g stroke="#c9a96f" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.6">
+      <path d="M40 -50 C24 -84 48 -104 36 -140"/>
+      <path d="M104 -58 C88 -92 112 -112 100 -148"/>
+      <path d="M160 -46 C148 -72 166 -90 158 -118"/>
+    </g>
+    <!-- cinnamon dusting -->
+    <g fill="#a67352">
+      <circle cx="70" cy="6" r="3.5"/>
+      <circle cx="102" cy="10" r="3"/>
+      <circle cx="126" cy="4" r="3.5"/>
+    </g>
+  </g>
+
+  <!-- two capsules on a small dish -->
+  <g transform="translate(255 760)">
+    <ellipse cx="0" cy="26" rx="120" ry="26" fill="#e9d9c4"/>
+    <ellipse cx="0" cy="18" rx="120" ry="26" fill="#fbf7f0"/>
+    <g transform="rotate(-16)">
+      <rect x="-74" y="-6" width="76" height="30" rx="15" fill="#8f5d41"/>
+      <rect x="-74" y="-6" width="38" height="30" rx="15" fill="#a67352"/>
+      <ellipse cx="-58" cy="2" rx="8" ry="4" fill="#ffffff" opacity="0.4"/>
+    </g>
+    <g transform="translate(30 4) rotate(12)">
+      <rect x="0" y="-6" width="76" height="30" rx="15" fill="#8f5d41"/>
+      <rect x="0" y="-6" width="38" height="30" rx="15" fill="#a67352"/>
+      <ellipse cx="16" cy="2" rx="8" ry="4" fill="#ffffff" opacity="0.4"/>
+    </g>
+  </g>
+
+  <!-- bottle, simplified -->
+  <g transform="translate(790 420)">
+    <ellipse cx="120" cy="386" rx="150" ry="20" fill="#4f342a" opacity="0.14"/>
+    <rect x="70" y="0" width="100" height="52" rx="12" fill="#3b2a1e"/>
+    <rect x="82" y="48" width="76" height="28" fill="#6f3d16"/>
+    <path d="M20 120 C20 84 68 70 120 70 C172 70 220 84 220 120 L220 348 C220 372 200 386 176 386 L64 386 C40 386 20 372 20 348 Z" fill="url(#glassr)"/>
+    <rect x="36" y="104" width="18" height="250" rx="9" fill="#ffffff" opacity="0.16"/>
+    <rect x="40" y="150" width="160" height="170" rx="10" fill="#fbf7f0" stroke="#e4d3c1" stroke-width="2"/>
+    <rect x="40" y="150" width="160" height="7" rx="3.5" fill="#314e2f"/>
+    <text x="120" y="192" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="12" letter-spacing="2.5" fill="#8f5d41">KERALA AYURVEDA</text>
+    <text x="120" y="228" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#314e2f">Ashwagandha</text>
+    <text x="120" y="252" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="12" fill="#754a37">KSM-66® Root Extract</text>
+    <g transform="translate(120 288)">
+      <path d="M0 14 C-12 5 -12 -8 0 -14 C12 -8 12 5 0 14 Z" fill="#4f7a4a"/>
+    </g>
+  </g>
+
+  <!-- leaf sprig on table -->
+  <g transform="translate(1005 815) rotate(-10)">
+    <path d="M0 0 C30 -6 60 -4 86 8" stroke="#3c6138" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M18 -2 C14 -26 26 -42 46 -48 C50 -26 40 -8 18 -2 Z" fill="#4f7a4a"/>
+    <path d="M52 2 C50 -20 62 -34 80 -40 C82 -20 72 -4 52 2 Z" fill="#6f976a"/>
+    <circle cx="94" cy="4" r="9" fill="#dd9333"/>
+  </g>
+</svg>
