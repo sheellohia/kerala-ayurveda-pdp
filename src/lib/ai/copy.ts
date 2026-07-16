@@ -23,7 +23,10 @@ import type { FitCheckAnswers, Recommendation, RecommendationCopy } from '@/lib/
 
 const API_URL = 'https://api.anthropic.com/v1/messages';
 const DEFAULT_MODEL = 'claude-haiku-4-5';
-const TIMEOUT_MS = 8000;
+// Env-tunable so a demo can raise it to reliably show AI-refined copy; the
+// default stays tight for the production app-proxy budget. Any failure/timeout
+// still falls back to deterministic copy, so this only trades latency headroom.
+const TIMEOUT_MS = Number(process.env.ANTHROPIC_TIMEOUT_MS) || 8000;
 
 const aiCopySchema = z.object({
   verdictHeadline: z.string().min(1).max(160),

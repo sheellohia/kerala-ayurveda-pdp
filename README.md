@@ -4,6 +4,8 @@ A premium, Shopify-native product detail page enhancement for **Kerala Ayurveda 
 built to move a shopper from **confusion → confidence**. The centerpiece is an
 **"Is this right for me?" fit-check** backed by a real recommendation engine.
 
+**🎥 [Loom walkthrough](https://www.loom.com/share/29ec4f1954e9447fab03a1cade2606fe)** · **[Live demo](https://kerala-ayurveda-pdp.onrender.com)** (Render free tier — first load after idle cold-starts ~30–60s)
+
 Two surfaces, one shared contract:
 
 - **Next.js prototype** — the polished, deployable demo (all micro-interactions live here).
@@ -14,7 +16,7 @@ Two surfaces, one shared contract:
 > Grounded in research of the *live* store (`keralaayurveda.store`): its Ashwagandha PDP is
 > currently **sold out with add-to-cart disabled**, hides benefits/dosage in accordions, has no
 > supplement facts, weak trust, and **no decision support** (`quiz_config: is_active:false`). This
-> build fixes each of those gaps. Full brief context in the git history / `DESIGN_SPEC.md`.
+> build fixes each of those gaps. Architecture, tradeoffs, and scalability: [`PRODUCTION_READINESS.md`](PRODUCTION_READINESS.md).
 
 ---
 
@@ -198,10 +200,7 @@ with regulatory/legal counsel and backed by on-file evidence before publishing. 
 
 ## Deliverables
 
-- **Live demo**: **https://kerala-ayurveda-pdp.onrender.com** (Render free tier — the first load after idle cold-starts for ~30–60s, then it's fast).
+- **Loom walkthrough**: https://www.loom.com/share/29ec4f1954e9447fab03a1cade2606fe
+- **Live demo**: https://kerala-ayurveda-pdp.onrender.com (Render free tier — first load after idle cold-starts ~30–60s, then fast).
 - **Run locally**: `npm run dev` → http://localhost:3000. Hosted via the included `render.yaml` blueprint (Render → New → Blueprint → connect this repo/branch).
-- **Repository**: this repo (committed to the `demo/kerala-ashwagandha-pdp` branch).
-- **README**: this file. **AI usage note**: [`AI_USAGE.md`](AI_USAGE.md).
-- **Shopify guide**: [`shopify/README.md`](shopify/README.md). **Build brief**: `DESIGN_SPEC.md`.
-- **Production readiness & scalability**: [`PRODUCTION_READINESS.md`](PRODUCTION_READINESS.md).
-- **Demo script (local-only)**: [`LOOM_SCRIPT.md`](LOOM_SCRIPT.md). **Submission checklist**: [`SUBMISSION_CHECKLIST.md`](SUBMISSION_CHECKLIST.md).
+- **Docs**: [`AI_USAGE.md`](AI_USAGE.md) (AI usage note) · [`PRODUCTION_READINESS.md`](PRODUCTION_READINESS.md) (architecture, scalability, tradeoffs) · [`shopify/README.md`](shopify/README.md) (Shopify install + merchant config).

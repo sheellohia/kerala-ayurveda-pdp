@@ -17,7 +17,7 @@ and keep ownership of the result — not to hand over judgment.
   installed; `quiz_config` is `is_active:false`).
 - **Claude Fable 5** for the front-end craft: components, micro-interactions, the fit-check UI, and
   the SVG product artwork — built against a locked contract (types, API, design tokens) and a
-  detailed `DESIGN_SPEC.md` I authored.
+  detailed design spec I authored.
 - **The `claude-api` skill** to get the Anthropic Messages API details exactly right (model IDs,
   headers, model-agnostic request shape) for the optional AI-copy layer.
 
